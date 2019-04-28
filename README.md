@@ -6,84 +6,89 @@ With that I am also accepting PR's for new service and also updates to the curre
 
 If you are submitting PR's try and keep names and titles the same.
 
+## How to import an egg
 
-## Please read the HOWTO.md before submitting PRs
+If you are reading this it looks like you are looking to add an egg to your server.
+
+1. Download any of the json files located in the folders below. 
+   1. It's easiest to right click the `raw` button and save as.
+2. In your panel go to the `Nests` section in the admin part of the panel
+3. Click the green `Import Egg` button
+4. Browse to the json file you saved earlier
+5. Select what nest you want to put the egg in.
+   1. If you want a new nest you need to create it before importing the egg.
+6. Restart the daemon on your node before creating a server using the new egg(s).
+
+# You must restart your daemon after importing an egg
 
 
-#### Please read the HOWTO.md as it container important information.
+## Please read the CONTRIBUTING.md before submitting PRs
+
+## Bot Eggs
+
+[Discord](/bots/discord/)   
+* [ATL Bot](/bots/discord/atlbot/) Node JS  
+* [parkertron](/bots/discord/parkertron/) Golang  
+* [pixel-bot](/bots/discord/pixelbot/) Python  
+* [discord.js](bots/discord/discord.js/) discord.js  
+* [Sinusbot](/bots/discord/sinusbot/)  
+* [Bastion](/bots/discord/bastion/)
 
 ## Game Eggs
 
-### GTA
-#### FiveM
-The [FiveM](https://fivem.net/) GTA 5 dedicated server
+[Arma](/arma/)  
+* [Arma 3](/arma/arma3/)  
+* [Arma 3 HC](/arma/arma3_headless_client/)  
 
-#### SA:MP
-The [SA:MP](https://www.sa-mp.com/) GTA San Andreas dedicated server
+[Conan Exiles](/conan_exiles/conan_exiles)
 
-### Factorio
-#### factorio
-The [Factorio](https://factorio.com/) dedicated server
+[Don't Starve](/dont_starve/dont_starve)
 
-### Terraria
-#### tShock
-The [tShock](https://tshock.co) modded server.
-- This requires a minimum of 1g (1024m) to actually create a map. This will get OOM if you have less.
+[ET: Legacy](/etlegacy/etlegacy/)
 
-### Minecraft
-#### Spigot Enhanced
-This is a direct fork of the default spigot service with the added benefit of being able to build the spigot jar.  
-- (It's noted that building the jar is intensive and time consuming)
+[Factorio](/factorio/factorio/)  
 
-#### Forge Enhanced
-This is a direct fork of the default forge service
-- Has a version detection fix for "latest"
+[Grand Theft Auto](/gta/)  
+* [FiveM](/gta/fivem/)  
+* [RageMP](/gta/ragemp/)  
+* [Multi Theft Auto](/gta/mtasa/)
 
-#### FTB Packs
-##### Feed The Beast - generic
-[FTB](https://www.feed-the-beast.com/modpacks)
-Generic egg to handle any standard FTB modpack.
-Supply values to 2 variables to use
-- MODPACK_URL:  from the url to the pack https://www.feed-the-beast.com/projects/{MODPACK_URL}
-- MODPACK_VERSION: version of the modpack to install
+[Minecraft Java](/minecraft_java/)
+* [Forge](/minecraft_java/forge/)  
+* [Feed The Beast](/minecraft_java/ftb/)  
+* [Spigot](/minecraft_java/spigot/)
+* [PaperSpigot (Legacy)](/minecraft_java/spigot/paper-legacy)
+* [Technic](/minecraft_java/technic/)  
 
-##### FTB Revelation
-[FTB Revelation](https://www.feed-the-beast.com/projects/ftb-revelation)
+[Minecraft Bedrock](/minecraft_bedrock/)  
+* [Bedrock](/minecraft_bedrock/bedrock/)  
+* [Nukkit](/minecraft_bedrock/nukkit/)  
+* [PocketMine MP](/minecraft_bedrock/pocketmine_mp/)  
 
-#### Tekkit Packs
-##### Hexxit 
-[Hexxit](https://www.technicpack.net/modpack/hexxit.552552)
-##### Blightfall 
-[Blightfall](https://www.technicpack.net/modpack/blightfall.592618)
-##### Tekkit-Legends 
-[Tekkit Legends](https://www.technicpack.net/modpack/tekkit-legends.735902)
+[Minecraft Proxies](/minecraft_proxy/)  
+* [Waterfall](/minecraft_proxy/waterfall/)  
 
-### Minecraft PE
-#### Nukkit
-The [Nukkit](https://nukkit.io/) Minecraft PE server
+[Mount & Blade Warband](/mb_warband/)
 
-### Squad
-#### Squad Dedicated
-The [Squad](https://joinsquad.com/) official dedicated server
 
-### Xonotic
-#### xonotic
-The [xonotic](http://www.xonotic.org/) official dedicated server.
-- Disk space needs to be at least 1 gig for the full package.
+[OpenTTD](/openttd/)
 
-## Bot Eggs
-### Discord
+[Source](/source_servers/)  These eggs use steamcmd to install  
+* [7 Days to Die](/source_servers/7_days_to_die/)  
+* [PixARK](/source_servers/pixark/)  
+* [Rust Staging Branch](/source_servers/rust-staging/)
+* [Starbound](/source_servers/starbound)
 
-#### ATLBot
-The [ATLauncher Bot](https://github.com/ATLauncher/discord-bot/)
+[Unreal Engine](/unreal_engine)
+* [Tower Unit](/unreal_engine/tower_unit/)
 
-#### parkertron
-My own stupid chat bot [parkertron](https://github.com/parkervcp/parkertron)
- - Currently runs as the SupportBot in the pterodactyl discord server.
+[Squad](/squad/)  
 
-#### pixel-bot
-[pixel-bot](https://github.com/Ispira/pixel-bot)
- - More of a reason/way to test a python container.
+[Terraria](/terraria/)  
+* [tmodloader](/terraria/tmodloader)  
+* [tshock](/terraria/tshock/)  
 
-#### Sinusbot
-TS3 and Discord music bot. [sinusbot](https://www.sinusbot.com/)
+[Unturned](/unturned/)  
+* [RocketMod](/unturned/rocketmod/)  
+
+[Xonotic](/xonotic/)  
