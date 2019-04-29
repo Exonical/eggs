@@ -1,0 +1,36 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1"
+    },
+    "exported_at": "2019-04-29T08:35:19-04:00",
+    "name": "Luna Multiplayer",
+    "author": "b.anglin@terrahost.io",
+    "description": "Kerbal Space Program Luna Multiplayer Server\r\nhttp:\/\/lunamultiplayer.com\/",
+    "image": "quay.io\/pterodactyl\/core:mono",
+    "startup": "mono .\/Server.exe",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"All systems up and running.\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{\r\n    \"custom\": true,\r\n    \"location\": \"logs\/latest.log\"\r\n}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash \r\napt-get -y update\r\napt-get -y install curl unzip\r\n\r\ncd \/tmp\r\ncurl -sSLO https:\/\/github.com\/LunaMultiplayer\/LunaMultiplayer\/releases\/download\/${LMP_VERSION}\/LunaMultiplayer-Release.zip\r\nunzip LunaMultiplayer-Release -d \/tmp\r\nrm -rf LMPClient LMP\\ Readme.txt\r\ncp -Rf \/tmp\/LMPServer\/* \/mnt\/server\r\n\r\nexport HOME=\/mnt\/server\r\nmkdir -p \/mnt\/server\/{Config,Universe,Plugins,logs}",
+            "container": "ubuntu:18.04",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Luna Multiplayer Version",
+            "description": "Luna Multiplayer Version from GitHub\r\nhttps:\/\/github.com\/LunaMultiplayer\/LunaMultiplayer\/releases\/",
+            "env_variable": "LMP_VERSION",
+            "default_value": "0.21.0",
+            "user_viewable": 1,
+            "user_editable": 0,
+            "rules": "required"
+        }
+    ]
+}
