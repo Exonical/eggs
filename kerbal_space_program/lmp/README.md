@@ -1,4 +1,4 @@
-# SinusBot
+# Luna Multiplayer
 ### Their [Site](https://lunamultiplayer.com/)
 Kerbal Space Program multiplayer server mod.
 
