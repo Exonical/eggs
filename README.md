@@ -53,6 +53,9 @@ If you are reading this it looks like you are looking to add an egg to your serv
 * [RageMP](/gta/ragemp/)  
 * [Multi Theft Auto](/gta/mtasa/)
 
+[Kerbal Space Program](/kerbal_space_program/)
+* [Luna Multiplayer](/kerbal_space_program/lmp/)
+
 [Minecraft Java](/minecraft_java/)
 * [Forge](/minecraft_java/forge/)  
 * [Feed The Beast](/minecraft_java/ftb/)  
